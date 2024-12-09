@@ -37,9 +37,8 @@
                 console.log(WeatherDetails);
                 result.innerHTML = `<div class="row border bg-light p-3 align-items-center">
                             <div>
-                                <h1>Temperature : ${WeatherDetails.main.temp}</h1>
-                                <h1>Pressure : ${WeatherDetails.main.pressure}</h1>
-                                <h1>Humidity : ${WeatherDetails.main.humidity}</h1>
+                                <h1>Temperature : ${Math.floor(WeatherDetails.main.temp-273.15)}°C</h1>
+                                <h1>Humidity : ${WeatherDetails.main.humidity}%</h1>
                             </div>
                             
                         </div> `;
